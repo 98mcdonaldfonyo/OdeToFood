@@ -15,6 +15,8 @@ namespace OdeToFood.Pages.Resturants
     {
         public string Message { get; set; }//having to use this as the data source
         public IEnumerable<Resturant> Resturants { get; set; }
+        [BindProperty(SupportsGet =true)]//usually the Bind prop works for Post request Model Binding
+        public string SearchTerm { get; set; }
 
 
 
@@ -32,9 +34,10 @@ namespace OdeToFood.Pages.Resturants
             //Value from App settings
             //Used it as as a data source
             Message = _config["Message"];
-            Resturants = resturantData.GetAll();
-           
+          
+            Resturants = resturantData.GetResturantsByName(SearchTerm);
 
+            ;
         }
     }
 }

@@ -5,6 +5,22 @@
 }
 
 <h1>Resturants</h1>
+
+<form method="get">
+
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search" asp-for="SearchTerm"/>
+            <span class="input-group-btn">
+                <button class="btn btn-info">
+                    <i class="glyphicon glyphicon-search"></i>              
+                </button>
+            </span>
+        </div>
+    </div>
+
+</form>
+
 <body>
     <table class="table">
         @foreach (var r in Model.Resturants)
@@ -12,7 +28,12 @@
         <tr>
             <td>@r.NBame</td>
             <td>@r.Location</td>
-            <td>@r.cuisine</td>         
+            <td>@r.cuisine</td>    
+            <td>
+                <a class="btn btn-lg" asp-page="./Detail" asp-route-ResturantId=@r.Id>
+                  <i class=" glyphicon glyphicon-zoom-in"></i>            
+                </a>
+            </td>
         </tr>
         }
 
