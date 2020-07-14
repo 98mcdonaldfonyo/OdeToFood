@@ -12,7 +12,7 @@
         <div class="input-group">
             <input type="search" class="form-control" placeholder="Search" asp-for="SearchTerm"/>
             <span class="input-group-btn">
-                <button class="btn btn-info">
+                <button class="btn btn-primary">
                     <i class="glyphicon glyphicon-search"></i>              
                 </button>
             </span>
@@ -30,13 +30,13 @@
             <td>@r.Location</td>
             <td>@r.cuisine</td>    
             <td>
-                <a class="btn btn-outline-info" asp-page="./Detail" asp-route-ResturantId=@r.Id>
+                <a class="btn btn-primary" asp-page="./Detail" asp-route-ResturantId=@r.Id>
                     <i class=" glyphicon glyphicon-zoom-in"></i>
                 </a>
 
 
 
-                <a class="btn btn-info" asp-page="./Edit" asp-route-ResturantId=@r.Id>
+                <a class="btn btn-primary" asp-page="./Edit" asp-route-ResturantId=@r.Id>
                     <i class=" carousel-control-edit-icon"></i>
                 </a>
             </td>
@@ -44,5 +44,6 @@
         }
 
     </table>
+    <a asp-page="./Edit"class="btn btn-primary">New Resturant</a>
     <div>@Model.Message </div>
 </body>
