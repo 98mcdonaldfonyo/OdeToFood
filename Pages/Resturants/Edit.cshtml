@@ -11,19 +11,21 @@
     <div class="form-group">
         <label asp-for="Resturant.NBame"></label>
         <input asp-for="Resturant.NBame" class="form-control" />
+        <span class="text-danger"asp-validation-for="Resturant.NBame"></span>
     </div>
 
     <div class="form-group">
         <label asp-for="Resturant.Location"></label>
         <input asp-for="Resturant.Location" class="form-control" />
+        <span class="text-danger" asp-validation-for="Resturant.Location"></span>
+
     </div>
 
     <div class="form-group">
         <label asp-for="Resturant.cuisine"></label>
         <select class="form-control" asp-for="Resturant.cuisine" asp-items="Model.Cusines">
-
-
         </select>
+        <span class="text-danger" asp-validation-for="Resturant.cuisine"></span>
     </div>
 
 
