@@ -1,10 +1,21 @@
 ﻿@page
 @model ListModel
 @{
-    
+
 }
 
 <h1>Resturants</h1>
 <body>
-    <h2>@Model.Message</h2> 
+    <table class="table">
+        @foreach (var r in Model.Resturants)
+        { 
+        <tr>
+            <td>@r.NBame</td>
+            <td>@r.Location</td>
+            <td>@r.cuisine</td>         
+        </tr>
+        }
+
+    </table>
+    <div>@Model.Message </div>
 </body>
