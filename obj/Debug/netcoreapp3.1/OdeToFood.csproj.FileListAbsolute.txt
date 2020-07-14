@@ -116,3 +116,5 @@ D:\Mc Donald Fonyo\ASP .NET CORE Fundamentals\OdeToFood\OdeToFood\bin\Debug\netc
 D:\Mc Donald Fonyo\ASP .NET CORE Fundamentals\OdeToFood\OdeToFood\bin\Debug\netcoreapp3.1\OdeToFood.Data.pdb
 D:\Mc Donald Fonyo\ASP .NET CORE Fundamentals\OdeToFood\OdeToFood\bin\Debug\netcoreapp3.1\OdeToFood.Core.pdb
 D:\Mc Donald Fonyo\ASP .NET CORE Fundamentals\OdeToFood\OdeToFood\obj\Debug\netcoreapp3.1\Razor\Pages\Resturants\Detail.cshtml.g.cs
+D:\Mc Donald Fonyo\ASP .NET CORE Fundamentals\OdeToFood\OdeToFood\obj\Debug\netcoreapp3.1\Razor\Pages\Resturants\NotFound.cshtml.g.cs
+D:\Mc Donald Fonyo\ASP .NET CORE Fundamentals\OdeToFood\OdeToFood\obj\Debug\netcoreapp3.1\Razor\Pages\Resturants\Edit.cshtml.g.cs
