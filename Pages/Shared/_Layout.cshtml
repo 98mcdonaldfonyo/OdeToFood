@@ -51,6 +51,7 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - OdeToFood - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            @RenderSection("footer", required: false)
         </div>
     </footer>
 
@@ -59,5 +60,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
+   
 </body>
 </html>
