@@ -1,16 +1,18 @@
 ﻿@page "{resturantID}"
 @model OdeToFood.Pages.Resturants.DeleteModel
 @{
-    Layout = null;
+    // Layout = "_Layout2 ";//no layout used when creating the razor page
+    ViewData["Title"] = "Delete";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Delete</title>
-</head>
-<body>
-</body>
-</html>
+    <h2>Delete !</h2>
+    <div class=" alert alert-danger">
+
+        Are you sure you want to delete this @Model.Resturant.NBame?
+    </div>
+    <form method="post">
+        <button type ="submit"class="btn btn-danger ">Yes !</button>
+        <a asp-page="List"class="btn btn-primary" >Cancel</a>
+    </form>
+
